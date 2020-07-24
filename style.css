@@ -1,0 +1,953 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+button{
+    font-family: Oswald;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 14px;
+    font-family: Spartan;
+}
+
+input{
+    font-family: Spartan;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Roboto;
+}
+
+i {
+    margin-right: 4px;
+    font-size: 15px;
+}
+
+.date{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.363);
+}
+
+/* -------header start------ */
+
+header {
+    background-color: black;
+}
+
+.header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-contact {
+    display: flex;
+}
+
+.header-contact p {
+    color: white;
+    margin-right: 20px;
+}
+
+
+.header-search button {
+    padding: 3px 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 14px;
+    margin:0 -5px;
+}
+
+.header-search button:focus {
+    color: #BDBDBD;
+}
+
+.header-menu-btn{
+    display: none;
+    transition: .5s;
+}
+
+/* .header-menu-btn:focus{
+    transform: rotate(90deg);
+} */
+
+#search-area{
+    position: absolute;
+    right: 270px;
+    top: -1000px;
+    transition: .2s;
+    z-index: 99999;
+    transition: .5s;
+}
+
+#search-area input[type="text"]{
+    width: 300px;
+    background-color: white;
+    border: 2px solid black;
+    outline: none;
+    padding: 5px 10px;
+}
+
+/* ----log in area start---- */
+
+#log-in-area{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0 70px 0;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(assets/img/bg/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 9999999;
+    top: 100px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 50px 15px rgba(0, 0, 0, 0.568);
+    visibility: hidden;
+}
+
+.log-in-form{
+    position: relative;
+}
+
+#logcrosbtn{
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#logcrosbtn i{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.loh-in-title{
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.loh-in-title h2{
+    margin-bottom: 10px;
+}
+
+.log-in-form form input{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.log-in-form form input[type="password"], .log-in-form form input[type="text"] {
+    padding:10px;
+    margin-bottom: 20px;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+}
+
+.log-in-form form input::placeholder{
+    color: #ffffff;
+}
+
+.log-in-form form a{
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+.lon-in-forgot-btn{
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.lon-in-forgot-btn:hover{
+    text-decoration: underline;
+}
+/* ----log in area end---- */
+
+/* -------header end------ */
+
+/* -------logo area start------ */
+
+.logo-area {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 180px;
+    height: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------logo area end------ */
+
+/* -------navber area start------ */
+.navber-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+#navcrose{
+    display: none;
+}
+
+.navber-area ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navber-area ul li a {
+    padding: 7px 20px;
+    margin:0 -5px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .5s;
+    position: relative;
+}
+
+.navber-area ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: scaleY(1.8);
+    transition: .5s;
+    opacity: 0;
+}
+
+.navber-area ul li a:hover::before{
+    opacity: 1;
+    transform: scaleY(1.2);
+}
+
+.navber-area ul li a:hover{
+    background-color: black;
+    color: #ffffff;
+}
+
+/* -------navber area end------ */
+
+/* -------banner area  start----- */
+
+.banner-area{
+    margin-bottom: 70px;
+}
+
+.banner-first-section, .banner-2nd-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.banner-1st-full-body{
+    width: 33%;
+}
+
+.banner-1st-pic-detail{
+    width: 100%;
+    position: relative;
+}
+
+.banner-1st-pic-detail::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.banner-first-section-pic{
+    width: 100%;
+    height: 250px;
+}
+
+.banner-first-section-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-2nd-section-pic{
+    width: 24%;
+    height: 200px;
+}
+
+.banner-2nd-section-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-first-section-details{
+    position: absolute;
+    bottom: 10px;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.banner-first-section-details h3{
+    margin-bottom: 20px;
+}
+
+/* -------banner area  end----- */
+
+/* ------- news & blogs area  start ----- */
+
+.news-blogs-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-wapper{
+    width: 70%;
+}
+
+.news-area{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-caed-area{
+    width: 48%;
+}
+
+.news-card-img{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.news-card-img img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.news-caed-area{
+    margin-bottom: 50px;
+}
+
+.news-caed-area:hover .news-card-img img{
+    transform: scale(1.02);
+}
+
+.news-caed-area h2{
+    color: black;
+}
+
+.news-tags-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0 30px 0;
+}
+
+.news-tags-time a{
+    color: black;
+}
+
+.news-tags-time p{
+    color: #929292;
+}
+
+.news-area-buttom{
+    margin: 0 auto;
+}
+
+.news-area-buttom button{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 5px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-family: Oswald;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.news-area-buttom button:hover{
+    color:#BDBDBD;
+}
+
+/* --blogs area-- */
+
+.blogs-area{
+    width: 28%;
+    background-color:#F4F6F6;
+    padding: 20px;
+    height: auto;
+}
+
+.instagram-area{
+    margin-bottom: 50px;
+}
+
+.instagram-area h2{
+    margin-bottom: 25px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid black;
+}
+
+.instagram-pic-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.instagram-img-box{
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.instagram-pic{
+    width: 100%;
+    height: 130px;
+}
+
+.instagram-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----most popular---- */
+
+.most-popular-area h2{
+    margin-bottom: 25px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid black;
+}
+
+.most-popular-img-area{
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.most-popular-img-area::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.most-popular-area-details{
+    position: absolute;
+    bottom: 30%;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.most-popular-area-pic{
+    width: 100%;
+    height: 180px;
+}
+
+.most-popular-area-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -------news & blogs area  end----- */
+
+/* ==========2nd banner area start=========== */
+
+.second-banner{
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+}
+
+.second-banner-pic{
+    width: 100%;
+    height: 450px;
+}
+
+.second-banner-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.second-banner-detail{
+    width: 70%;
+    position: absolute;
+    padding: 30px;
+    top: 50%;
+    color: #ffffff;
+}
+
+.second-banner-detail h1{
+    margin-bottom: 20px;
+}
+
+/* ==========2nd banner area end=========== */
+
+/* ========== LATEST STORIES area start=========== */
+
+.latest-stories-title{
+    margin-bottom: 40px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid black;
+}
+
+.latest-stories-title i{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.latest-storics-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.latest-storics-area-pic{
+    width: 30%;
+    height: 200px;
+}
+
+.latest-storics-area-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.latest-storics-area-details{
+    width: 65%;
+}
+
+.latest-storics-area-details h2{
+    margin-bottom: 30px;
+    color: black;
+}
+
+.latest-storics-area-details p{
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #5F5C5C;
+}
+
+.latest-storics-area:hover h2{
+    color: #484646 ;
+}
+
+.leatest-storice-button-page{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leatest-storice-button-page a{
+    padding:10px;
+    color: white;
+    background-color: #929292;
+    transition: .3s;
+    margin-right: 5px;
+}
+
+.leatest-storice-button-page span{
+    color: #484646;
+    font-size: 27px;
+}
+
+.leatest-storice-button-page a:hover{
+    background-color: #5F5C5C;
+}
+
+.leatest-storice-button-page{
+    margin-bottom: 100px;
+}
+
+/* ========== LATEST STORIES area end=========== */
+
+/* ========== Footer area start=========== */
+
+footer{
+    background-color: black;
+    padding: 50px;
+    color: #ffffff;
+}
+
+.footer-line{
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 30px 0;
+    clip-path: ellipse(50% 30% at 50% 50%);
+}
+
+.footer-first-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-first-section-card{
+    width: 30%;
+}
+
+.footer-first-section-card h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.footer-about-us{
+    color: #929292;
+}
+
+.footer-second-section{
+    text-align: center;
+}
+
+.footer-social-media{
+    padding:0 30px 40px 30px;
+    color: #929292;
+}
+
+.footer-social-media p i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.footer-social-media p span{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.footer-social-media:hover .fa-facebook-square{
+    color: rgb(54, 145, 182);
+    transform: rotate(20deg);
+    transition: .3s;
+}
+
+.footer-social-media:hover .fa-twitter-square{
+    color: skyblue;
+    transform: rotate(20deg);
+    transition: .3s;
+}
+
+.footer-social-media:hover .fa-youtube-square{
+    color: red;
+    transform: rotate(20deg);
+    transition: .3s;
+}
+
+.footer-contact p{
+    margin-bottom: 25px;
+    color: #929292;
+}
+
+/* ========== Footer area end=========== */
+
+
+/* =================style page start=================== */
+
+.style-title{
+    margin-bottom: 50px;
+}
+
+.style-title h2{
+    color: black;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+}
+
+/* ===================contact page start ====================== */
+
+
+.contact-form-area{
+    width: 50%;
+    margin: 0 auto 100px auto;
+}
+
+.contact-form-area input{
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.contact-form-area textarea{
+    width: 100%;
+    height: 180px;
+    border: 2px solid black;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 10px;
+    resize: none;
+}
+
+.contact-form-area button{
+    margin: 20px 0;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+    
+}
+
+.contact-form-area button:hover{
+    background-color: black;
+    color: white;
+}
+
+.message-sent-confirm{
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #929292;
+}
+
+/* ===================contact page end ====================== */
+
+/* =============== storice page start =============== */
+
+.news-banner-pic{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 70px;
+}
+
+.news-banner-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.news-full-articel{
+    margin-bottom: 40px;
+}
+
+.news-full-articel h4{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.news-full-articel p{
+    text-align: justify;
+}
+
+.articel-post-time{
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0 50px 0;
+    flex-wrap: wrap;
+}
+
+.articel-post-time p{
+   margin-left: 10px;
+}
+
+.articel-repoter-pic{
+    width: 50px;
+    height: 50px;
+}
+
+.articel-repoter-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.articel-social-btn{
+    display: flex;
+    margin-left: 20px;
+}
+
+.articel-social-btn a{
+    padding: 5px 20px;
+    color: black;
+    background-color: #F4F6F6;
+    margin: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.articel-social-btn a i{
+    padding-right: 10px;
+    border-right: 1px solid black;   
+}
+
+.articel-social-btn a:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ----------comment section--------- */
+
+.comment-section{
+    margin: 50px  0 100px 0;
+}
+
+.comment-section-pic{
+    width: 50px;
+    height: 50px;
+}
+
+.comment-section-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.comment-section form{
+    display: flex;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.comment-section form textarea{
+    resize: none;
+    height: 20px;
+    border: none;
+    width: 80%;
+    height: 45px;
+    outline: none;
+    padding: 10px;
+    background-color: #F4F6F6;
+}
+
+.comment-section form button{
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .25s;
+}
+
+.comment-section form button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ------people comments------ */
+
+.people-comments{
+    margin: 30px 5% 50px 15%;
+}
+
+.people-comments p{
+    font-size: 12px;
+}
+
+.comments-name-pic-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.comments-name-pic-date .comment-date{
+    font-weight: 600;
+}
+
+.comments-pic-name{
+    display: flex;
+    align-items: flex-end;
+}
+
+.comments-pic-name p{
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.comment-like-unlick-btn{
+    display: flex;
+    margin: 10px;
+    color: black;
+}
+
+.comment-like-unlick-btn button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comment-like-unlick-btn button:hover i{
+    transform: scale(1.4);
+}
+
+/* =============== storice page end =============== */
+
