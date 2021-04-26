@@ -15,8 +15,14 @@ button{
 }
 
 .container {
-    width: 1100px;
+    width: 84%;
     margin: 0 auto;
+}
+
+@media screen and (min-width:1920px) {
+    .container{
+        width: 1610px;
+    }
 }
 
 p {
@@ -114,20 +120,24 @@ header {
 
 /* ----log in area start---- */
 
+#loginwapper{
+    display: none;
+    place-items: center;
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+}
+
 #log-in-area{
     width: 50%;
     margin: 0 auto;
     padding: 10px 0 70px 0;
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url(assets/img/bg/bg1.jpg);
     background-size: cover;
-    background-position: center;
-    position: absolute;
-    z-index: 9999999;
-    top: 100px;
-    left: 0;
-    right: 0;
+    background-position: center;  
     box-shadow: 0 0 50px 15px rgba(0, 0, 0, 0.568);
-    visibility: hidden;
 }
 
 .log-in-form{
@@ -215,7 +225,7 @@ header {
 
 .logo {
     width: 180px;
-    height: 150px;
+    height: 110px;
 }
 
 .logo img {
@@ -617,6 +627,10 @@ header {
 /* ========== LATEST STORIES area end=========== */
 
 /* ========== Footer area start=========== */
+
+.footer-logo{
+    margin-bottom: 30px;
+}
 
 footer{
     background-color: black;
