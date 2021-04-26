@@ -1,32 +1,39 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('#loginbtn').click(function(){
+    window.onload = function () {
+        $('#pre-loader').hide();
+        $('body').css({
+            'overflow-y': 'scroll'
+        })
+    }
+
+    $('#loginbtn').click(function () {
         $('#loginwapper').css({
-            'display':'grid'
+            'display': 'grid'
         });
         $('body').css({
-            'overflow' : 'hidden'
+            'overflow': 'hidden'
         })
     });
 
-    function hideLogInForm(){
+    function hideLogInForm() {
         $('#loginwapper').hide();
         $('body').css({
-            'overflow-y' : 'scroll'
+            'overflow-y': 'scroll'
         })
     }
 
     let showLogInForm = true
 
-    $('#logcrosbtn').click(function(){
+    $('#logcrosbtn').click(function () {
         hideLogInForm()
     });
 
-    $(document).mousedown(function(e){
+    $(document).mousedown(function (e) {
         var login_container = $('#log-in-area');
         var logInBtn = $('#loginbtn')
-    
-        if (!login_container.is(e.target) && login_container.has(e.target).length === 0 && !logInBtn.is(e.target)){
+
+        if (!login_container.is(e.target) && login_container.has(e.target).length === 0 && !logInBtn.is(e.target)) {
             hideLogInForm()
         }
     });
