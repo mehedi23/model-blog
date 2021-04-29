@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MH Newspape</title>
+    <link rel="icon" href="assets/img/LOgos _ icons/favicon.ico" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/otherpage.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Spartan&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/responsive2.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+
+    <section id="pre-loader">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ============================================= 1st section ======================================== -->
 
@@ -21,55 +32,43 @@
     <header>
         <div class="container">
             <div class="header">
-                <div class="header-search">
-                    <button class="header-menu-btn" id="headerbtn"><i class="fas fa-bars"></i></button>
+                <div class="header-contact">
+                    <p><i class="fas fa-phone-alt"></i> 000-000-000-000</p>
+                    <p><i class="fas fa-envelope"></i>mhs24model@email.com</p>
                 </div>
                 <div class="header-search">
-                    <button id="searchbtn"><i class="fas fa-search"></i>Search</button>
                     <button id="loginbtn">LOG IN</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- ----------search start------- -->
-
-    <div class="container">
-        <div id="search-area">
-            <form action="">
-                <input type="text" placeholder="Search here">
-            </form>
-        </div>
-    </div>
-
-    <!-- ----------search end------- -->
-
     <!-- ----------log in start------- -->
 
     <div id="loginwapper">
-        <div class="container">
-            <div id="log-in-area">
+
+        <div id="log-in-area">
+            <div class="log-in-form">
+                <span id="logcrosbtn"><i class="fas fa-times"></i></span>
+                <div class="loh-in-title">
+                    <h2>
+                        Sign in
+                    </h2>
+                    <p>
+                        Welcome to your acount
+                    </p>
+                </div>
                 <div class="log-in-form">
-                    <span id="logcrosbtn"><i class="fas fa-times"></i></span>
-                    <div class="loh-in-title">
-                        <h2>
-                            Sign in
-                        </h2>
-                        <p>
-                            Welcome to your acount
-                        </p>
-                    </div>
-                    <div class="log-in-form">
-                        <form action="">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <a href="#">Log in</a>
-                        </form>
-                        <a class="lon-in-forgot-btn" href="#">Forgot your password? Click here</a>
-                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <a href="#">Log in</a>
+                    </form>
+                    <a class="lon-in-forgot-btn" href="#">Forgot your password? Click here</a>
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- ----------log in end------- -->
@@ -81,7 +80,7 @@
         <div class="logo-area">
             <a href="index.html">
                 <div class="logo">
-                    <img src="assets/img/logo.png" alt="">
+                    <img src="assets/img/LOgos _ icons/m-logo 3.png" alt="">
                 </div>
             </a>
         </div>
@@ -99,7 +98,7 @@
                 <li><a href="business.html">BUSINESS</a></li>
                 <li><a href="lifestyle.html">LIFESTYLE</a></li>
                 <li><a href="marketing.html">MARKETING</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="contact.html">contactt</a></li>
             </ul>
         </div>
     </div>
@@ -126,7 +125,7 @@
             <form action="">
                 <input type="text" placeholder="user_name *">
                 <input type="email" placeholder="Email *">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message*" ></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
             </form>
             <button>Submit</button>
         </div>
@@ -148,7 +147,7 @@
                         About us
                     </h3>
                     <div class="logo footer-logo">
-                        <img src="assets/img/logo.png" alt="">
+                        <img src="assets/img/LOgos _ icons/m-logo 3.png" alt="">
                     </div>
                     <p class="footer-about-us">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum velit laudantium
@@ -218,20 +217,13 @@
     <!-- ========== Footer area end=========== -->
 
 
+
+    <!--===========awesome icon==========-->
+    <script src="https://kit.fontawesome.com/bdb42816d8.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- ============java script=========== -->
-    <script src="assets/js/style.js"></script>
-
-    <script>
-        var headbtn = document.getElementById('headerbtn');
-        headbtn.onclick = function () {
-            document.getElementById('navber').style.left = '0px';
-        }
-
-        var headbtn = document.getElementById('navcrose');
-        headbtn.onclick = function () {
-            document.getElementById('navber').style.left = '-1000px';
-        }
-    </script>
+    <script src="assets/js/main.js"></script>
 
     <!--===========awesome icon==========-->
     <script src="https://kit.fontawesome.com/bdb42816d8.js" crossorigin="anonymous"></script>
